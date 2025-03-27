@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-dep-regr"
+version = "0.1.0"
+description = ""
+authors = ["Mark Mindrin <min-mar-i@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "poetry_dep_regr", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+"scikit-learn" = "*"
+"matplotlib" = "*"
+"numpy" = "*"
+"pandas" = "*"
+"adjustText" = "*"
+"scipy" = "*"
+tabulate = "*"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
